@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+#form-container {
+  display: flex;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 10px;
+  width: 300px;
+  border: 4px;
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: -4px 4px 4px rgba(0,0,0,.1);
+}
+
+.campo {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.lbl {
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.input-box {
+  padding: 5px 10px;
+  width: 200px;
+  margin: auto;
+  border-bottom: 1px solid #333;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.input-btn {
+  margin: auto;
+  width: 150px;
+  height: 40px;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 20px;
+  color: #333;
+  cursor: pointer;
+  transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.input-btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+/*  CONFIGURAÇÕES PARA FICAR RESPONSIVO */
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 0px) {
+
+  #form-container {
+    min-height: calc(100vh - 70px);
+  }
+
+  .formulario {
+    height: 400px;
+    max-height: calc(100vh - 70px - 20px);
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  #form-container {
+    min-height: 100%;
+  }
+
+  .formulario {
+    height: 400px;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

@@ -1,0 +1,14 @@
+<div id="items-display" *ngIf="items">
+  <div class="item" *ngFor="let item of items">
+    <div class="nome"><span>{{ item.nm_titulo }}</span></div>
+    <div class="descricao">
+        <span><i class="material-icons quote-top">format_quote</i>{{ item.ds_publicacao }}<i class="material-icons quote-bot">format_quote</i></span>
+    </div>
+    <div class="preco">
+      <span>
+        <i class="material-icons user">perm_identity</i>
+        <span class="value">{{ item.nm_autor }}</span>
+      </span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div id="form-container">
+  <form class="formulario">
+    <div class="campo">
+      <label class="lbl">Titulo</label>
+      <div class="input-box">
+        <input type="text" name="nome" class="input" autocomplete="off" [(ngModel)]="nm_titulo">
+      </div>
+    </div>
+    <div class="campo">
+      <label class="lbl">Publicação</label>
+      <div class="input-box">
+        <input type="text" name="descricao" class="input" autocomplete="off" [(ngModel)]="ds_publicacao">
+      </div>
+    </div>
+    <div class="campo">
+      <label class="lbl">Autor</label>
+      <div class="input-box">
+        <input type="text" name="valor" class="input" autocomplete="off" [(ngModel)]="nm_autor">
+      </div>
+    </div>
+    <input type="submit" value="adicionar" name="submit" class="input-btn" (click)="postData()">
+  </form>
+</div>

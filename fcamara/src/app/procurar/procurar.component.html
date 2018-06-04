@@ -1,0 +1,20 @@
+<div id="procurar">
+  <div class="input-box" title="pesquisar publicações pelo autor">
+    <input type="text" class="input" name='search' autocomplete="off" [(ngModel)]="search_string">
+    <button class="input-btn"(click)="submitSearch()"><i class="material-icons">search</i></button>
+  </div>
+</div>
+<div id="items-display" *ngIf="items">
+  <div class="item" *ngFor="let item of items">
+    <div class="nome"><span>{{ item.nm_titulo }}</span></div>
+    <div class="descricao">
+      <span><i class="material-icons quote-top">format_quote</i>{{ item.ds_publicacao }}<i class="material-icons quote-bot">format_quote</i></span>
+    </div>
+    <div class="preco">
+      <span>
+        <i class="material-icons">perm_identity</i>
+        <span class="value">{{ item.nm_autor }}</span>
+      </span>
+    </div>
+  </div>
+</div>

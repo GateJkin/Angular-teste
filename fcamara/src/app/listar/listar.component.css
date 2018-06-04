@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Song+Myung');
+
+#items-display {
+  padding: 20px 5%;
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 5%;
+}
+
+.item {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  padding: 7px 10px;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -4px 4px 3px rgba(0,0,0,.1);
+}
+
+.item > .nome {
+  display: flex;
+  margin: 0 auto 10px auto;
+  padding: 5px 10px;
+  border-bottom: 1px solid #cecece;
+  min-width: 20%;
+}
+
+.item > .nome > span {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 5px;
+  margin: auto;
+}
+
+.item > .descricao {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin: auto auto 10px auto;
+  padding: 5px;
+}
+
+.item > .descricao > span {
+  font-family: 'Song Myung', serif;
+  overflow-y: auto;
+}
+
+.item > .preco {
+  padding: 5px 10px;
+  display: flex;
+  margin: auto auto 0 auto;
+  border-top: 1px solid #cecece;
+  min-width: 10%;
+}
+
+.item > .preco > span {
+  margin: auto;
+  display: flex;
+}
+
+.value {
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.user {
+  color: #333;
+  margin: auto;
+  font-size: 24px;
+}
+
+/*  CONFIGURAÇÕES PARA FICAR RESPONSIVO */
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 0px) {
+
+  #items-display {
+    grid-template-columns: auto;
+    grid-template-rows: calc((100vh - 70px) * 0.8);
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  #items-display {
+    grid-template-columns: auto auto;
+    grid-template-rows: calc((100vh - 70px) * 0.8);
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  #items-display {
+    grid-template-rows: 70vh;
+    grid-template-columns: 30% 30% 30%;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
